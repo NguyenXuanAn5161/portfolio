@@ -7,6 +7,7 @@
   --submenu-bg: #40976f;
   --menu-text-color: rgba(0, 0, 0, 0.85);
   --menu-selected-text-color: #5af5ad;
+  --content-bg: #ffffff;
 }
 
 /* Dark Mode */
@@ -18,6 +19,7 @@
   --submenu-bg: #1b2634;
   --menu-text-color: #f3f3f3;
   --menu-selected-text-color: #54b689;
+  --content-bg: #111821;
 }
 
 /* Ant Design Overwrite */
@@ -44,6 +46,11 @@ body {
 /* Remove background for submenu items */
 .ant-menu-sub {
   background-color: var(--submenu-bg) !important;
+}
+
+.ant-layout-content,
+.ant-layout-footer {
+  background-color: var(--content-bg) !important;
 }
 
 /* -------------- không phụ thuộc dark/light mode --------------- */
