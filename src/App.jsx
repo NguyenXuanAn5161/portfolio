@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 import { VscColorMode } from "react-icons/vsc";
 
-const { Content, Footer, Sider } = Layout;
+const { Header, Content, Footer, Sider } = Layout;
 
 const siderStyle = {
   overflow: "auto",
@@ -111,27 +111,34 @@ const App = () => {
           openKeys={stateOpenKeys}
           onOpenChange={onOpenChange}
         />
-        <div style={{ textAlign: "center" }}>
+      </Sider>
+      <Layout>
+        <Header
+          style={{
+            padding: 0,
+            height: "4%",
+            backgroundColor: "var(--bg-color)",
+            color: "var(--text-color)",
+            transition: "background-color 0.3s, color 0.3s",
+          }}
+        >
           <div
             style={{
               fontWeight: "700",
-              color: "white",
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "flex-end",
               alignItems: "center",
               columnGap: 10,
+              color: "var(--text-color)",
             }}
           >
-            <VscColorMode />
-            <p>Dark mode</p>
+            <VscColorMode style={{ fontSize: 20 }} />
+            <Switch
+              checked={currentTheme === "dark"}
+              onChange={() => dispatch(toggleTheme())}
+            />
           </div>
-          <Switch
-            checked={currentTheme === "dark"}
-            onChange={() => dispatch(toggleTheme())}
-          />
-        </div>
-      </Sider>
-      <Layout>
+        </Header>
         <Content
           style={{
             padding: "24px 16px 0",
