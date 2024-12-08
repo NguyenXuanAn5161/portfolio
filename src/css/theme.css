@@ -1,0 +1,63 @@
+/* Light Mode (Default) */
+:root {
+  --bg-color: #54b689;
+  --text-color: #000000;
+  --sider-bg: #54b689;
+  --menu-bg: #54b689;
+  --submenu-bg: #40976f;
+  --menu-text-color: rgba(0, 0, 0, 0.85);
+  --menu-selected-text-color: #5af5ad;
+}
+
+/* Dark Mode */
+.dark-theme {
+  --bg-color: #1e2a3a;
+  --text-color: #ffffff;
+  --sider-bg: #1e2a3a;
+  --menu-bg: #1e2a3a;
+  --submenu-bg: #1b2634;
+  --menu-text-color: #f3f3f3;
+  --menu-selected-text-color: #54b689;
+}
+
+/* Ant Design Overwrite */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.ant-layout-sider {
+  background-color: var(--sider-bg) !important;
+  min-width: 18% !important;
+}
+
+.ant-menu-dark {
+  background-color: var(--menu-bg) !important;
+  color: var(--menu-text-color) !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  color: var(--menu-selected-text-color) !important;
+}
+
+/* Remove background for submenu items */
+.ant-menu-sub {
+  background-color: var(--submenu-bg) !important;
+}
+
+/* -------------- không phụ thuộc dark/light mode --------------- */
+.ant-menu-item-selected,
+.ant-menu-submenu-selected,
+.ant-menu-submenu-title-selected {
+  background-color: transparent !important;
+}
+
+/* Remove background for submenu titles */
+.ant-menu-submenu-title {
+  background-color: transparent !important;
+}
+
+.ant-menu-title-content {
+  font-weight: 700;
+}
