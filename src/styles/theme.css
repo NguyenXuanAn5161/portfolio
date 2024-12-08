@@ -51,6 +51,8 @@ body {
 .ant-layout-content,
 .ant-layout-footer {
   background-color: var(--content-bg) !important;
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* -------------- không phụ thuộc dark/light mode --------------- */

@@ -131,13 +131,7 @@ const App = () => {
           />
         </div>
       </Sider>
-      <Layout
-        style={{
-          backgroundColor: "var(--bg-color)",
-          color: "var(--text-color)",
-          transition: "background-color 0.3s, color 0.3s",
-        }}
-      >
+      <Layout>
         <Content
           style={{
             padding: "24px 16px 0",
@@ -155,9 +149,6 @@ const App = () => {
           style={{
             textAlign: "center",
             padding: "20px 0",
-            color: "var(--text-color)",
-            backgroundColor: "var(--bg-color)",
-            transition: "background-color 0.3s, color 0.3s",
           }}
         >
           <div
