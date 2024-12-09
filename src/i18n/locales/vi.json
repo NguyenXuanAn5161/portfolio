@@ -7,5 +7,11 @@
     "portfolio": "Hồ sơ công việc",
     "resume": "Sơ yếu lí lịch",
     "contact": "Liên hệ"
+  },
+  "footer": {
+    "copyright": "Đã đăng ký bản quyền.",
+    "designed_with": "Thiết kế với ❤ Ant Design",
+    "degree": "Kỹ thuật phầm mềm",
+    "class": "khóa 2020-2025, Đại học Công nghiệp Thành phố Hồ Chí Minh"
   }
 }

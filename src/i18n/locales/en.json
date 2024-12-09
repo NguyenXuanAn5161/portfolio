@@ -7,5 +7,11 @@
     "portfolio": "Portfolio",
     "resume": "Resume",
     "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "designed_with": "Designed with ❤ using Ant Design",
+    "degree": "Bachelor of Engineering, Software Engineering",
+    "class": "Class of 2020-2025, Industrial University of Ho Chi Minh City"
   }
 }

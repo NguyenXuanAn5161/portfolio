@@ -1,7 +1,10 @@
 import { Footer } from "antd/es/layout/layout";
+import { useTranslation } from "react-i18next";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const FooterComponent = () => {
+  const { t } = useTranslation();
+
   return (
     <Footer
       style={{
@@ -20,18 +23,13 @@ const FooterComponent = () => {
       >
         <div>
           <p>
-            © {new Date().getFullYear()} Nguyễn Xuân An. All rights reserved.
+            © {new Date().getFullYear()} Nguyễn Xuân An. {t("footer.copyright")}
           </p>
-          <p>
-            Designed with <span style={{ color: "red" }}>❤</span> using Ant
-            Design
-          </p>
+          <p> {t("footer.designed_with")} </p>
         </div>
         <div>
           <p>
-            Bachelor of Engineering, Software Engineering,
-            <br />
-            Class of 2020-2025, Industrial University of Ho Chi Minh City
+            {t("footer.degree")}, <br /> {t("footer.class")}
           </p>
         </div>
         <div style={{ display: "flex", gap: "20px", marginTop: "10px" }}>
