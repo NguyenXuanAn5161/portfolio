@@ -1,0 +1,11 @@
+{
+  "welcome": "Chào mừng đến với hồ sơ của tôi",
+  "about": "Về tôi",
+  "contact": "Liên hệ",
+  "menu": {
+    "about": "Về tôi",
+    "portfolio": "Hồ sơ công việc",
+    "resume": "Sơ yếu lí lịch",
+    "contact": "Liên hệ"
+  }
+}

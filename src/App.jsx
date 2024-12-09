@@ -13,6 +13,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { VscColorMode } from "react-icons/vsc";
+import { useTranslation } from "react-i18next";
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -24,26 +25,26 @@ const siderStyle = {
   scrollbarWidth: "thin",
 };
 
-const items = [
+const getMenuItems = (t) => [
   {
     key: "1",
     icon: <FaUser />,
-    label: "About Me",
+    label: t("menu.about"),
   },
   {
     key: "2",
     icon: <FaBriefcase />,
-    label: "Portfolio",
+    label: t("menu.portfolio"),
   },
   {
     key: "3",
     icon: <FaFileAlt />,
-    label: "Resume",
+    label: t("menu.resume"),
   },
   {
     key: "4",
     icon: <FaEnvelope />,
-    label: "Contact",
+    label: t("menu.contact"),
   },
 ];
 
@@ -62,8 +63,6 @@ const getLevelKeys = (items1) => {
   func(items1);
   return key;
 };
-
-const levelKeys = getLevelKeys(items);
 
 const App = () => {
   const [stateOpenKeys, setStateOpenKeys] = useState(["2", "23"]);
@@ -96,6 +95,13 @@ const App = () => {
   useEffect(() => {
     document.body.className = currentTheme === "dark" ? "dark-theme" : "";
   }, [currentTheme]);
+
+  const { t, i18n } = useTranslation();
+  const items = getMenuItems(t); // Truyền t vào hàm để lấy danh sách menu
+  const levelKeys = getLevelKeys(items);
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang); // Thay đổi ngôn ngữ
+  };
 
   return (
     <Layout>
@@ -151,6 +157,12 @@ const App = () => {
           <Button type="primary" onClick={() => dispatch(toggleTheme())}>
             Toggle Theme
           </Button>
+
+          <h1>{t("welcome")}</h1>
+          <p>{t("about")}</p>
+          <p>{t("contact")}</p>
+          <button onClick={() => changeLanguage("en")}>English</button>
+          <button onClick={() => changeLanguage("vi")}>Tiếng Việt</button>
         </Content>
         <Footer
           style={{
