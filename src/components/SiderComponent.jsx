@@ -1,7 +1,8 @@
 import { Menu, Layout } from "antd";
-import reactLogo from "../../assets/react.svg";
+import reactLogo from "../assets/react.svg";
 import { FaUser, FaBriefcase, FaFileAlt, FaEnvelope } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const { Sider } = Layout;
 
@@ -13,27 +14,34 @@ const siderStyle = {
   scrollbarWidth: "thin",
 };
 
+// hàm tạo 1 mục menu
+const getItem = (label, key, icon, children, type) => {
+  return {
+    key,
+    icon,
+    children,
+    label,
+    type,
+  };
+};
+
 const getMenuItems = (t) => [
-  {
-    key: "1",
-    icon: <FaUser />,
-    label: t("menu.about"),
-  },
-  {
-    key: "2",
-    icon: <FaBriefcase />,
-    label: t("menu.portfolio"),
-  },
-  {
-    key: "3",
-    icon: <FaFileAlt />,
-    label: t("menu.resume"),
-  },
-  {
-    key: "4",
-    icon: <FaEnvelope />,
-    label: t("menu.contact"),
-  },
+  getItem(<Link to="/about">{t("menu.about")}</Link>, "about", <FaUser />),
+  getItem(
+    <Link to="/portfolio">{t("menu.portfolio")}</Link>,
+    "portfolio",
+    <FaBriefcase />
+  ),
+  getItem(
+    <Link to="/resume">{t("menu.resume")}</Link>,
+    "resume",
+    <FaFileAlt />
+  ),
+  getItem(
+    <Link to="/contact">{t("menu.contact")}</Link>,
+    "contact",
+    <FaEnvelope />
+  ),
 ];
 
 const getLevelKeys = (items1) => {
@@ -86,7 +94,7 @@ const SiderComponent = ({ stateOpenKeys, setStateOpenKeys }) => {
       <Menu
         theme="dark"
         mode="inline"
-        defaultSelectedKeys={["231"]}
+        defaultSelectedKeys={["about"]}
         items={items}
         openKeys={stateOpenKeys}
         onOpenChange={onOpenChange}

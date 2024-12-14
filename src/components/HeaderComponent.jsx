@@ -2,7 +2,7 @@ import { Dropdown, Menu, Radio, Space, Switch } from "antd";
 import { VscColorMode } from "react-icons/vsc";
 import { useDispatch, useSelector } from "react-redux";
 import { Header } from "antd/es/layout/layout";
-import { toggleTheme } from "../../contexts/store/themeSlice";
+import { toggleTheme } from "../contexts/store/themeSlice";
 import { useState } from "react";
 import ReactCountryFlag from "react-country-flag";
 import { useTranslation } from "react-i18next";
