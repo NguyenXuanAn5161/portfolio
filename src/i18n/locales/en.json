@@ -13,5 +13,10 @@
     "designed_with": "Designed with ❤ using Ant Design",
     "degree": "Bachelor of Engineering, Software Engineering",
     "class": "Class of 2020-2025, Industrial University of Ho Chi Minh City"
+  },
+  "user": {
+    "name": "Nguyễn Xuân An",
+    "major": "Software Engineer",
+    "description": "I am a software engineer with expertise in backend development using Java, and I have experience working with frontend technologies like React JS and React Native. I am currently finishing my studies in software engineering and about to graduate. Want to know how I can contribute to your project? Check out my project portfolio and online resume."
   }
 }

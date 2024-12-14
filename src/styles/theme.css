@@ -34,7 +34,8 @@ body {
   min-width: 18% !important;
 }
 
-.ant-menu-dark {
+.ant-menu-dark,
+.ant-layout-header {
   background-color: var(--menu-bg) !important;
   color: var(--menu-text-color) !important;
 }

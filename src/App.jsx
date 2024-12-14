@@ -57,6 +57,9 @@ const App = () => {
           <p>{t("contact")}</p>
           <button onClick={() => changeLanguage("en")}>English</button>
           <button onClick={() => changeLanguage("vi")}>Tiếng Việt</button>
+          <h1>{t("user.name")}</h1>
+          <p style={{ fontSize: 18 }}>{t("user.major")}</p>
+          <p>{t("user.description")}</p>
         </Content>
         <FooterComponent />
       </Layout>

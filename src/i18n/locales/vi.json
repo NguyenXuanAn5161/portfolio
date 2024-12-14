@@ -13,5 +13,10 @@
     "designed_with": "Thiết kế với ❤ Ant Design",
     "degree": "Kỹ thuật phầm mềm",
     "class": "khóa 2020-2025, Đại học Công nghiệp Thành phố Hồ Chí Minh"
+  },
+  "user": {
+    "name": "Nguyễn Xuân An",
+    "major": "Kỹ sư phần mềm",
+    "description": "Tôi là một kỹ sư phần mềm với chuyên môn chính về backend sử dụng ngôn ngữ Java, đồng thời có kinh nghiệm làm việc với frontend bằng React JS và React Native. Hiện tại, tôi đang hoàn tất chương trình học kỹ thuật phần mềm và chuẩn bị tốt nghiệp. Muốn biết thêm về cách tôi có thể đóng góp vào dự án của bạn? Hãy xem qua danh mục dự án và sơ yếu lý lịch trực tuyến của tôi."
   }
 }
