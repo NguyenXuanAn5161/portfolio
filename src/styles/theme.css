@@ -71,3 +71,9 @@ body {
 .ant-menu-title-content {
   font-weight: 700;
 }
+
+/* style custom */
+.rowCustom {
+  display: flex;
+  flex-direction: row;
+}

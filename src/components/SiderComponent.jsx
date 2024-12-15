@@ -26,7 +26,7 @@ const getItem = (label, key, icon, children, type) => {
 };
 
 const getMenuItems = (t) => [
-  getItem(<Link to="/about">{t("menu.about")}</Link>, "about", <FaUser />),
+  getItem(<Link to="/">{t("menu.about")}</Link>, "about", <FaUser />),
   getItem(
     <Link to="/portfolio">{t("menu.portfolio")}</Link>,
     "portfolio",

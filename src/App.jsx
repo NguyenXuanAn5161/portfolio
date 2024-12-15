@@ -14,7 +14,7 @@ const App = () => {
       errorElement: <NotFound />,
       children: [
         {
-          path: "about",
+          path: "",
           index: true,
           element: <AboutMe />,
         },
