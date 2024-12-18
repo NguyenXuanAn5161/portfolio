@@ -1,8 +1,30 @@
-import { Button, Image } from "antd";
+import { Image } from "antd";
 import { useTranslation } from "react-i18next";
+import ButtonCustom from "../../components/Button/Button";
+import { useState } from "react";
+import { SiGoogledocs } from "react-icons/si";
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import "./AboutMe.css";
 
 const AboutMe = () => {
   const { t } = useTranslation();
+  const [loadingPortfolio, setLoadingPortfolio] = useState(false);
+  const [loadingResume, setLoadingResume] = useState(false);
+
+  const handleViewPortfolio = () => {
+    setLoadingPortfolio(true);
+    setTimeout(() => {
+      setLoadingPortfolio(false);
+    }, 1000);
+  };
+
+  const handleViewResume = () => {
+    setLoadingResume(true);
+    setTimeout(() => {
+      setLoadingResume(false);
+    }, 1000);
+  };
+
   return (
     <>
       <div
@@ -20,8 +42,21 @@ const AboutMe = () => {
             {t("user.major")}
           </p>
           <p>{t("user.description")}</p>
-          <Button>View Portfolio</Button>
-          <Button>View Resume</Button>
+          <div style={{ columnGap: 10, display: "flex" }}>
+            <ButtonCustom
+              loading={loadingPortfolio}
+              onPress={handleViewPortfolio}
+              iconLeft={<FaArrowAltCircleRight />}
+              label={"View Portfolio"}
+            />
+            <ButtonCustom
+              loading={loadingResume}
+              onPress={handleViewResume}
+              iconLeft={<SiGoogledocs />}
+              label={"View Resume"}
+              className={"btn-resume"}
+            />
+          </div>
         </div>
         <div style={{ textAlign: "center" }}>
           <Image height={300} width={400} src="https://placehold.co/800x600" />
