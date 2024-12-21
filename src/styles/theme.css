@@ -8,6 +8,8 @@
   --menu-text-color: rgba(0, 0, 0, 0.85);
   --menu-selected-text-color: #224937;
   --content-bg: #ffffff;
+  --introduction-bg: #fafafa;
+  /* --introduction-bg: pink; */
   --bs-btn-bg: #54b689;
 }
 
@@ -22,6 +24,7 @@
   --menu-selected-text-color: #54b689;
   --content-bg: #111821;
   --bs-btn-bg: #54b689;
+  --introduction-bg: #111821;
 }
 
 /* Ant Design Overwrite */
@@ -67,6 +70,10 @@ body {
   background-color: var(--content-bg) !important;
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
+}
+
+.introduction-bg {
+  background-color: var(--introduction-bg);
 }
 
 /* -------------- không phụ thuộc dark/light mode --------------- */

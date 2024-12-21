@@ -1,6 +1,11 @@
 {
   "welcome": "Welcome to my portfolio",
-  "about": "About Me",
+  "about": {
+    "wid": {
+      "title": "What I do",
+      "introduction": "I have completed a 3-month internship at FPT, where I specialized in backend development using Java Spring and Thymeleaf. This experience not only solidified my technical skills but also deepened my understanding of team workflows in international enterprises. I learned to work efficiently, manage my time effectively, and collaborate with colleagues to achieve common goals."
+    }
+  },
   "contact": "Contact",
   "menu": {
     "about": "About Me",

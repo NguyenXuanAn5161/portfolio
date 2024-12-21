@@ -1,6 +1,11 @@
 {
   "welcome": "Chào mừng đến với hồ sơ của tôi",
-  "about": "Về tôi",
+  "about": {
+    "wid": {
+      "title": "Tôi làm gì",
+      "introduction": "Tôi đã có 3 tháng thực tập tại FPT, nơi tôi chuyên sâu về backend với Java Spring và Thymeleaf. Thời gian tại đây đã giúp tôi không chỉ nắm vững kỹ thuật mà còn hiểu sâu hơn về quy trình làm việc nhóm trong các doanh nghiệp quốc tế. Tôi đã học được cách làm việc hiệu quả, quản lý thời gian và phối hợp cùng đồng nghiệp để đạt được mục tiêu chung."
+    }
+  },
   "contact": "Liên hệ",
   "menu": {
     "about": "Về tôi",

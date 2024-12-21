@@ -26,12 +26,7 @@ const LayoutComponent = () => {
       />
       <Layout>
         <HeaderComponent />
-        <Content
-          style={{
-            padding: "24px 16px 0",
-            overflow: "initial",
-          }}
-        >
+        <Content>
           <Outlet />
         </Content>
         <FooterComponent />

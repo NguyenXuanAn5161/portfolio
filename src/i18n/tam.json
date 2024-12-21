@@ -1,0 +1,32 @@
+{
+  "personal_statement": "Mặc dù tôi chưa có kinh nghiệm thực tế, tôi luôn sẵn sàng học hỏi và phát triển trong môi trường làm việc.",
+  "education_and_courses": {
+    "course_1": {
+      "name": "Khóa học JavaScript",
+      "institution": "Tên Trường/Trang web",
+      "description": "Hoàn thành khóa học về JavaScript."
+    }
+  },
+  "personal_projects": [
+    {
+      "name": "Ứng dụng web đơn giản",
+      "description": "Phát triển ứng dụng web sử dụng HTML, CSS, và JavaScript."
+    }
+  ],
+  "soft_skills": [
+    "Làm việc nhóm",
+    "Giao tiếp",
+    "Giải quyết vấn đề",
+    "Quản lý thời gian"
+  ],
+  "technical_skills": {
+    "Vanilla_JavaScript": "Hiểu biết cơ bản về JavaScript thuần.",
+    "HTML_CSS": "Tạo và thiết kế các trang web đơn giản.",
+    "npm_Gulp_Grunt": "Hiểu biết cơ bản về các công cụ xây dựng và quản lý gói.",
+    "Angular_React_Vue": "Kiến thức sơ bộ về các framework/libraries phổ biến.",
+    "Node_js": "Hiểu biết cơ bản về runtime environment cho JavaScript.",
+    "Python_Django": "Kiến thức về Python và framework Django.",
+    "PHP": "Hiểu biết cơ bản về PHP.",
+    "Sass_LESS": "Kiến thức về các preprocessor CSS."
+  }
+}
